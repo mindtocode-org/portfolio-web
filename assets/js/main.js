@@ -333,4 +333,23 @@
       iso.layout();
     });
   });
+  // Tippy
+  tippy("#html5", {
+    content: "Html5",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#css3", {
+    content: "Css3",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#flutter", {
+    content: "Flutter",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
 })(jQuery);
