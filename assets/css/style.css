@@ -3795,7 +3795,7 @@ a:focus {
 -------------------------------------------------------------- */
 
 #footer {
-  background: #222429;
+  background: var(--primary-color2);
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -3848,8 +3848,9 @@ a:focus {
   font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 14px;
   line-height: 22px;
-  color: #1d1d1d;
+  color: var(--primary-color);
   border-radius: 5px;
+  caret-color: var(--primary-color6);
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.06);
@@ -4273,7 +4274,7 @@ button.clear-button {
 }
 
 button.clear-button:hover {
-  background: var(--primary-color6);
+  background: #fce5de;
 }
 
 .project-filter-buttons button.active-filter {
