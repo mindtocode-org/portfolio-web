@@ -4349,4 +4349,39 @@ button.clear-button:hover {
   left: 5px;
 } */
 /* End Works */
+
+.primary-btn {
+  background-color: var(--primary-color2);
+  color: var(--primary-color);
+  font-size: 14px;
+  border: 1px solid var(--primary-color);
+  border-radius: 14px;
+  border-left: 5px solid var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  padding: 8px 35px;
+  font-weight: bold;
+}
+.secondary-btn {
+  background-color: var(--primary-color);
+  color: var(--primary-color6);
+  font-size: 14px;
+  border: 1px solid var(--primary-color6);
+  border-radius: 14px;
+  border-left: 5px solid var(--primary-color6);
+  border-bottom: 5px solid var(--primary-color6);
+  transition: all 0.3s ease-in-out;
+  padding: 8px 35px;
+  font-weight: bold;
+}
+.primary-btn:hover {
+  color: var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+.secondary-btn:hover {
+  color: var(--primary-color6);
+  border-left: 1px solid var(--primary-color6);
+  border-bottom: 1px solid var(--primary-color6);
+}
 /* My Custom Css */
