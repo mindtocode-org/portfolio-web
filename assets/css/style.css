@@ -4284,64 +4284,77 @@ button.clear-button:hover {
 }
 
 .projects-grid {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 30px;
 }
 
 .project {
-  height: 380px;
-  width: 250px;
-  width: 31%;
-  margin: 10px;
+  height: 415px;
   border-radius: 15px;
   box-shadow: 3px 3px 14px #c3c3c3, -7px -7px 14px #fdfdfd;
   padding: 0 15px;
 }
-@media (max-width: 991px) {
-  .project {
-    width: 100%;
-    height: 400px;
-  }
-}
+
 .project h2 {
-  text-align: center;
+  font-size: 22px;
+  margin: 10px 0 10px 0;
 }
 
 .project-image {
-  width: 70%;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.project p {
+  color: #737373;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .project-title {
   text-align: center;
 }
-
-.project .badges {
-  margin: 5px;
-  margin-top: 0px;
+.card-chip {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 22px;
+  width: fit-content;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.web-chip {
+  background-color: #d1fae4;
+  color: #166e3f;
+}
+.project .badges {
+  margin-top: 10px;
+  display: flex;
+  padding: 0 30px 0 0;
 }
 
 .project .badges span {
-  border: 1px solid grey;
   border-radius: 5px;
-  padding: 5px 10px;
-  position: relative;
   margin: 5px;
   font-size: 14px;
   font-weight: 500;
 }
 .project .badges span img {
-  width: 20px;
+  width: 80%;
 }
 .preview-link {
   font-size: 14px;
   font-weight: 500;
   border-radius: 5px;
-  padding: 5px 10px;
-  border: 1px solid grey;
+  background-color: #fff;
+  padding: 8px 10px;
+  border: 1px solid #eee;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+  width: 130px;
+  height: 38px;
 }
 
 /* .project > .badges > span:before {
@@ -4782,4 +4795,59 @@ button.clear-button:hover {
   background-color: var(--primary-color4);
 }
 /* End Packages */
+
+.main-project {
+  padding: 130px 0 20px 0;
+}
+.main-project .main-project-desc,
+.main-project .main-project-info {
+  padding: 20px 0 20px 15px;
+}
+
+.main-project .main-project-info {
+  background-color: #fafafa;
+}
+.main-project .main-project-desc h3 {
+  color: var(--primary-color6);
+  font-size: 30px;
+}
+.main-project .main-project-desc p {
+  color: var(--primary-color4);
+  font-size: 16px;
+  line-height: 1.4;
+}
+.main-project .main-project-desc p:first-of-type {
+  margin-top: 10px;
+}
+.main-project .main-project-desc p:last-of-type {
+  margin-bottom: 10px;
+}
+.main-project .main-project-feat li i,
+.main-project .main-project-info li i {
+  margin-right: 15px;
+  color: var(--primary-color4);
+}
+.main-project .main-project-feat li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.main-project .main-project-info li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.main-project .main-project-info li span {
+  font-weight: bold;
+}
+.routing-btns .route-btn button {
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* .routing-btns .route-btn button:hover {
+  color: var(--primary-color6);
+} */
 /* My Custom Css */
