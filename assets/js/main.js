@@ -315,22 +315,24 @@
   });
 
   // Start Filter Works
-  const iso = new Isotope(".projects-grid");
-  const filterButtons = Array.prototype.slice.call(
-    document.querySelectorAll(".filter-button")
-  );
+  const iso = new Isotope(".projects-grid", {
+    itemSelector: ".project-item",
+    layoutMode: "fitRows",
+  });
+  const filterButtons = Array.from(document.querySelectorAll(".filter-button"));
 
-  filterButtons.map((button) => {
+  // Set up click event listeners
+  filterButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      filterButtons.map((button) => button.classList.remove("active-filter"));
-      const type = this.getAttribute("data-filter");
+      // Remove active class from all buttons, add to clicked button
+      filterButtons.forEach((btn) => btn.classList.remove("active-filter"));
       this.classList.add("active-filter");
-      iso.arrange({
-        // item element provided as argument
-        filter: type && `.${type}`,
-      });
 
-      iso.layout();
+      // Retrieve filter type and apply filter
+      const type = this.getAttribute("data-filter");
+      iso.arrange({
+        filter: type ? `.${type}` : "*", // "*" shows all items when 'All' is clicked
+      });
     });
   });
   // Tippy
@@ -348,6 +350,42 @@
   });
   tippy("#flutter", {
     content: "Flutter",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#javascript", {
+    content: "Javascript",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#bootstrap", {
+    content: "Bootstrap",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#vue", {
+    content: "Vue",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#figma", {
+    content: "Figma",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#miro", {
+    content: "Miro",
+    placement: "top",
+    arrow: true,
+    arrowType: "round",
+  });
+  tippy("#notion", {
+    content: "Notion",
     placement: "top",
     arrow: true,
     arrowType: "round",
